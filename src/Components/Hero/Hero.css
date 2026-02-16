@@ -84,6 +84,7 @@
     margin:10px 0px;
 }
 .hero-action{
+     flex-direction: column;
     gap :16px;
     font-size:18px;
     font-weight:500;

@@ -1,11 +1,22 @@
-/* now add the css properties for all the components */
-*{
-  margin :0;
-  padding:0;
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  height:100vh;
+
+/* Base body styles */
+body {
+  min-height: 100vh;          /* safer than height:100vh */
   background-color: #000000;
-  color: white;
-  font-family:'outfit';
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;         /* prevents side scroll */
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
 }

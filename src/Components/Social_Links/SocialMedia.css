@@ -86,16 +86,16 @@
     padding: 40px 20px;
   }
   .social-title h1 {
-    font-size: 50px;
+    font-size: 42px;
     padding: 0;
   }
   .social-title img {
-    width: 130px;
+    width: 110px;
     right: -20px;
   }
   .social-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
   .social-item img {
     width: 100%;
@@ -103,7 +103,7 @@
     border-radius: 12px;
   }
   .social-show-more {
-    padding: 20px 40px;
+    padding: 14px 30px;
     font-size: 18px;
     margin: 50px auto;
   }

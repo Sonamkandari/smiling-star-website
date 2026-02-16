@@ -116,7 +116,7 @@
     font-size:22px;
     font-weight:500;
 }
-
+/* 
 @media (max-width:768px){
     .about{
         gap:80px;
@@ -163,4 +163,68 @@
         text-align: center;
         font-size:16px;
     }
+} */
+
+@media (max-width: 768px) {
+
+  .about {
+    gap: 50px;
+    margin: 40px 20px;   /* MUCH better for mobile */
+    align-items: flex-start;
+  }
+
+  .about-tittle h1 {
+    font-size: 42px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .about-tittle img {
+    width: 110px;
+    right: -10px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-para {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .about-skill {
+    gap: 16px;
+  }
+
+  .about-skill p {
+    font-size: 18px;
+    min-width: 120px;
+  }
+
+  .about-skill hr {
+    width: 100%;        /* KEY FIX */
+    height: 5px;
+  }
+
+  .about-achievements {
+    flex-direction: column;   /* KEY FIX */
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .about-achievement h1 {
+    font-size: 32px;
+  }
+
+  .about-achievement p {
+    font-size: 15px;
+    text-align: center;
+  }
 }
