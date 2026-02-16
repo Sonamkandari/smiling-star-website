@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
  export default defineConfig({
-  base: '/ smiling-stars-website/', //  Add this line
+  base: '/ smiling-star-website/', //  Add this line
   plugins: [react()],
 })
