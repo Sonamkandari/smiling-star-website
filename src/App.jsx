@@ -6,7 +6,6 @@ import Services from './Components/Services/Services'
 import MyWork from './Components/MyWork/myWork'
 import Contact from './Components/Contact_Section/Contact'
 import Footer from './Components/Footer-Section/Footer'
-import SocialMedia from './Components/Social_Links/SocialMedia'
 
 function App() {
   return (
@@ -21,9 +20,6 @@ function App() {
       <MyWork />
       {/* mount the Services component in this App.jsx file */}
       <Services />
-     
-      {/* mount the socialLinks component here */}
-      <SocialMedia/>
       {/* mount the Contact component here */}
       <Contact />
       {/* mount the footer component here */}

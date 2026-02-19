@@ -1,53 +1,100 @@
-import React from 'react'
-//importing about.cc file here
-import './About.css'
-//importing a theme pattern image
-import theme_pattern from '../../assets/theme_pattern1.svg'
-//importing a profile image
+import React from "react";
+import "./About.css";
+import theme_pattern from "../../assets/theme_pattern1.svg";
+
 function About() {
   return (
-    <div id='about' className='about'>
-        {/*lets add the html structure for this About component */}
-        <div className="about-tittle">
-            <h1>About Us</h1>
-            <img src={theme_pattern} alt="" />
+    <section id="about" className="about">
+
+      {/* SECTION TITLE */}
+      <div className="about-title">
+        <h1>About Smiling Star</h1>
+        <img src={theme_pattern} alt="" />
+        <p className="about-subtitle">
+          Technology with purpose. Impact with heart.
+        </p>
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className="about-content">
+
+        {/* LEFT: TEXT */}
+        <div className="about-text">
+          <p>
+            <strong>Smiling Star Private Limited</strong> is a technology-driven
+            organization focused on creating meaningful digital solutions for
+            social good.
+          </p>
+
+          <p>
+            We collaborate with NGOs, educational institutions, and
+            impact-focused organizations to design and build technology that is
+            accessible, scalable, and purpose-driven.
+          </p>
+
+          <p>
+            Our work bridges the gap between technology and real-world social
+            challenges by improving access to education, streamlining
+            operations, and enabling data-driven decision-making for social
+            impact initiatives.
+          </p>
         </div>
-         {/* creating a self section */}
-         <div className="about-sections">
-           
-            <div className="right-section">
-                {/* we will write some */}
-                <div className="about-para">
-                    <p>Smiling Star Private Limited specializes in delivering scalable and impactful technology solutions tailored for social causes. Our expertise lies in building reliable digital systems, user-friendly web platforms, and data-driven solutions that empower communities and organizations. We focus on innovation, accessibility, and long-term social impact.</p>
-                  
-                 </div>
-                 <div className="about-skills">
-                   <div className="about-skill"><p>Web Application Development</p><hr style={{width:"80%"}}/></div>
-                   <div className="about-skill"><p>Technology Solutions for Social Impact</p><hr style={{width:"60%"}}/></div>
-                   <div className="about-skill"><p>Scalable System Design</p><hr style={{width:"70%"}}/></div>
-                   <div className="about-skill"><p>Data & Database Management</p><hr style={{width:"50%"}}/></div>
-                 </div>
-            </div>
-         </div>
-        <div className="about-achievements">
-           <div className="about-achievement">
-            <h1>Solutions Delivered</h1>
-            <p>Web & digital platforms for social causes</p>
-           </div>
-            <hr/>
-           <div className="about-achievement">
-            <h1>Technology Focus</h1>
-            <p>Web, databases, scalable systems</p>
-            
-           </div>
-           <hr/>
-           <div className="about-achievement">
-            <h1>Social Impact</h1>
-            <p>Education, awareness, and accessibility</p>
-           </div>
-        </div> 
-    </div>
-  )
+
+        {/* RIGHT: CAPABILITIES */}
+        <div className="about-capabilities">
+          <h3>What We Do</h3>
+
+          <div className="capability">
+            <span>Web & Platform Development</span>
+            <div className="bar"><span className="fill w80"></span></div>
+          </div>
+
+          <div className="capability">
+            <span>Technology for Social Impact</span>
+            <div className="bar"><span className="fill w70"></span></div>
+          </div>
+
+          <div className="capability">
+            <span>Scalable & Secure System Design</span>
+            <div className="bar"><span className="fill w75"></span></div>
+          </div>
+
+          <div className="capability">
+            <span>Data Management & Insights</span>
+            <div className="bar"><span className="fill w60"></span></div>
+          </div>
+        </div>
+      </div>
+
+      {/* VALUES / IMPACT */}
+      <div className="about-values">
+        <div className="value-card">
+          <h3>Impact-Driven Solutions</h3>
+          <p>
+            Digital platforms built to support education, inclusion, and social
+            initiatives.
+          </p>
+        </div>
+
+        <div className="value-card">
+          <h3>Purpose-Led Technology</h3>
+          <p>
+            Systems designed with accessibility, reliability, and long-term
+            scale in mind.
+          </p>
+        </div>
+
+        <div className="value-card">
+          <h3>Communities We Serve</h3>
+          <p>
+            NGOs, educators, and organizations working to create positive social
+            change.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  );
 }
 
-export default About
+export default About;

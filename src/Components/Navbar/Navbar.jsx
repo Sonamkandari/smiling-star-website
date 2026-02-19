@@ -36,9 +36,11 @@ export const Navbar = () => {  //mount this navbar component to APP.jsx
         </ul>
         {/* create a contact me button */}
         <div className='nav-connect'>
-          <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With me</AnchorLink> {/* ✅ Moved text inside AnchorLink */}
+          <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Us</AnchorLink> {/* ✅ Moved text inside AnchorLink */}
         </div>
     </div>
   )
 }
 export default Navbar
+
+

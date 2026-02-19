@@ -1,22 +1,194 @@
-
-/* Global reset */
+/* =================================================
+   GLOBAL RESET
+================================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base body styles */
-body {
-  min-height: 100vh;          /* safer than height:100vh */
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Outfit', sans-serif;
-  overflow-x: hidden;         /* prevents side scroll */
+/* =================================================
+   DESIGN SYSTEM – SMILING STAR (LIGHT THEME)
+================================================= */
+:root {
+  /* Backgrounds */
+  --bg-main: #F9FAFB;
+  --bg-card: #FFFFFF;
+
+  /* Text */
+  --text-main: #111827;
+  --text-muted: #4B5563;
+
+  /* Brand / Accent */
+  --accent: #7C3AED;      /* Trust + Innovation */
+  --accent-soft: #EDE9FE;
+
+  /* Borders & UI */
+  --border-soft: #E5E7EB;
+
+  /* Shadows */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Make images responsive */
+/* =================================================
+   BASE BODY STYLES
+================================================= */
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* =================================================
+   TYPOGRAPHY
+================================================= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =================================================
+   LINKS
+================================================= */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5B21B6;
+  text-decoration: underline;
+}
+
+/* =================================================
+   SECTIONS
+================================================= */
+section {
+  padding: 90px clamp(20px, 8%, 120px);
+}
+
+/* =================================================
+   CARDS (Projects, Services, Impact)
+================================================= */
+.card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* =================================================
+   BUTTONS
+================================================= */
+.btn-primary {
+  background: linear-gradient(135deg, #7C3AED, #F59E0B);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(124, 58, 237, 0.35);
+}
+
+/* Secondary / Outline Button */
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* =================================================
+   IMAGES
+================================================= */
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 14px;
+}
+
+/* =================================================
+   FORMS (Contact / Collaborate)
+================================================= */
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  font-family: inherit;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* =================================================
+   UTILITIES
+================================================= */
+.text-center {
+  text-align: center;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+/* =================================================
+   MOBILE RESPONSIVE
+================================================= */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }

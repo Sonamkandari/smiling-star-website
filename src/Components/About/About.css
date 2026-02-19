@@ -1,230 +1,130 @@
-.about{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:80px;
-    margin:80px 170px;
-}
-.about-tittle{
-    position:relative
-}
-.about-tittle h1{
-    padding: 0px 30px;
-    font-size: 90px;
-    font-weight: 600;
-}
-/* putting the image behind the text */
-.about-tittle img{
-    position:absolute;
-    bottom:0;
-    right:0;
-    z-index:-1;
-}
-.about-sections{
-    display:flex;
-    gap: 80px;
+.about {
+  padding: 90px 120px;
+  background: #ffffff;
 }
 
-/* adding css properties for right section  */
-.right-section{
-    display:flex;
-    flex-direction:column;
-    gap:80px;
+/* TITLE */
+.about-title {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
 }
 
-/* adding css properties for about paragraph */
-.about-para{
-    display:flex;
-    flex-direction:column;
-    gap: 20px;
-    font-size:24px;
-    font-weight: 500;
+.about-title h1 {
+  font-size: 44px;
+  font-weight: 700;
 }
 
-/* adding css properties for about-skills */
-.about-skills{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+.about-title img {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -10px;
+  z-index: -1;
 }
 
-/* applying css for about-skill (specif skill component) */
-.about-skill{
-    display:flex;
-    gap:50px;
-    align-items:center;
-    transition:0.3s;
+.about-subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #6b7280;
 }
 
-/* adding hover effect on skills */
-.about-skill:hover{
-    transform:scale(1.05);
+/* MAIN CONTENT */
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+  align-items: start;
 }
 
-/* applying css for  about-skill name */
-.about-skill p{
-    min-width:150px;
-    font-size:24px;
-    font-weight: 500;
+/* TEXT */
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 20px;
 }
 
-/* adding css properties for the horizontal lines which we used as a skills set bar */
-.about-skill hr{
-    outline:none;
-    border:none;
-    width:50%;
-    height: 8px;
-    border-radius:50px;
-    background:linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
+/* CAPABILITIES */
+.about-capabilities h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
 }
 
-/* Applying css properties for the Achievement component */
-.about-achievements{
-    display:flex;
-    width:100%;
-    justify-content:space-around;
-    margin-bottom:80px;
+.capability {
+  margin-bottom: 20px;
 }
 
-/* adding css properties for individual achievement */
-.about-achievement{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    transition:0.5s;
+.capability span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
 }
 
-/* applying css properties to  each achievements headings */
-.about-achievement h1{
-    font-size:60px;
-    font-weight: 700;
-    background:linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
-    background-clip:text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.bar {
+  background: #e5e7eb;
+  height: 6px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-/* applying hover effect on achievement headings*/
-.about-achievement:hover {
-    transform:scale(1.12);
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  border-radius: 6px;
 }
 
-/* adding css properties to the achievements paragraph*/
-.about-achievement p{
-    font-size:22px;
-    font-weight:500;
+.w80 { width: 80%; }
+.w70 { width: 70%; }
+.w75 { width: 75%; }
+.w60 { width: 60%; }
+
+/* VALUES */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 90px;
 }
-/* 
-@media (max-width:768px){
-    .about{
-        gap:80px;
-        margin: 50px 70px;
-        align-items:start;
-    }
-    .about-tittle h1{
-        font-size:50px;
-        padding:0;
-    }
-    .about-tittle img{
-        width:130px;
-        right:-20px;
-    }
-    .about-sections{
-        flex-direction: column;
-    }
-    .about-left{
-        display:none;
-    }
-    .about-para{
-        font-size:18px;
-        line-height: 32px;
-    }
-    .about-skill{
-        gap:20px;
-        align-items: center;
-    }
-    .about-skill p{
-        font-size:20px;
-    }
-    .about-skill hr{
-        height: 6px;
-    }
-    .about-achievements{
-        justify-content: space-between;
-        gap:10px;
-    }
-    .about-achievement h1{
-        font-size: 34px;
-        font-weight: 700;
-    }
-    .about-achievement p{
-        text-align: center;
-        font-size:16px;
-    }
-} */
 
-@media (max-width: 768px) {
+.value-card {
+  background: #faf7ff;
+  padding: 30px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
 
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #7c3aed;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .about {
-    gap: 50px;
-    margin: 40px 20px;   /* MUCH better for mobile */
-    align-items: flex-start;
+    padding: 60px 30px;
   }
 
-  .about-tittle h1 {
-    font-size: 42px;
-    padding: 0;
-    text-align: left;
+  .about-content {
+    grid-template-columns: 1fr;
   }
 
-  .about-tittle img {
-    width: 110px;
-    right: -10px;
+  .about-values {
+    grid-template-columns: 1fr;
   }
 
-  .about-sections {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .about-left {
-    display: none;
-  }
-
-  .about-para {
-    font-size: 17px;
-    line-height: 28px;
-  }
-
-  .about-skill {
-    gap: 16px;
-  }
-
-  .about-skill p {
-    font-size: 18px;
-    min-width: 120px;
-  }
-
-  .about-skill hr {
-    width: 100%;        /* KEY FIX */
-    height: 5px;
-  }
-
-  .about-achievements {
-    flex-direction: column;   /* KEY FIX */
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 50px;
-  }
-
-  .about-achievement h1 {
+  .about-title h1 {
     font-size: 32px;
-  }
-
-  .about-achievement p {
-    font-size: 15px;
-    text-align: center;
   }
 }
