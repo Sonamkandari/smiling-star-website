@@ -14,7 +14,8 @@
     min-height: 100vh;
   background:
     
-    url("../../assets/background.jpg");
+    /* url("../../assets/background.jpg"); */
+    url("../../assets/background1.png");
 
   background-size: cover;
   background-position: center;
