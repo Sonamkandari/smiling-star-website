@@ -1,0 +1,145 @@
+/* ===============================
+   PREMIUM NAVBAR
+================================ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 48px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+/* Logo */
+.nav-logo {
+  height: 42px;
+  object-fit: contain;
+}
+
+/* ===============================
+   NAV MENU
+================================ */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+/* Hover */
+.nav-menu li a:hover {
+  color: #1E9BFF;
+}
+
+/* Active underline */
+.nav-menu li.active a {
+  color: #1E9BFF;
+}
+
+.nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0A7EDC, #2EC4F1);
+  border-radius: 2px;
+}
+
+/* ===============================
+   CTA BUTTON
+================================ */
+
+.nav-connect a {
+  padding: 10px 22px;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #0A7EDC, #2EC4F1);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(30, 155, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.nav-connect a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(30, 155, 255, 0.35);
+}
+
+/* ===============================
+   MOBILE MENU
+================================ */
+
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-mob-open {
+    display: block;
+    height: 26px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -360px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    width: 320px;
+    height: 100vh;
+    padding: 80px 24px;
+
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(14px);
+
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.08);
+    transition: right 0.4s ease;
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    height: 24px;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+}
