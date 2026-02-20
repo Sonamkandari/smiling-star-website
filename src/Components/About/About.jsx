@@ -11,7 +11,7 @@ function About() {
         <h1>About Smiling Star</h1>
         <img src={theme_pattern} alt="" />
         <p className="about-subtitle">
-          Technology with purpose. Impact with heart.
+           Who We Are
         </p>
       </div>
 
@@ -21,15 +21,16 @@ function About() {
         {/* LEFT: TEXT */}
         <div className="about-text">
           <p>
-            <strong>Smiling Star Private Limited</strong> is a technology-driven
-            organization focused on creating meaningful digital solutions for
-            social good.
+            <strong>Smiling Star Private Limited</strong> is a purpose-driven technology company building
+    digital solutions for social good. We create accessible, scalable, and
+    sustainable platforms that enable organizations to deliver measurable
+    social and environmental impact.
           </p>
 
           <p>
-            We collaborate with NGOs, educational institutions, and
-            impact-focused organizations to design and build technology that is
-            accessible, scalable, and purpose-driven.
+             Our approach blends strong technical expertise with a deep understanding
+    of social challenges, ensuring solutions that are user-centric,
+    data-driven, and designed for long-term sustainability.
           </p>
 
           <p>
@@ -37,61 +38,97 @@ function About() {
             challenges by improving access to education, streamlining
             operations, and enabling data-driven decision-making for social
             impact initiatives.
+              Our approach blends strong technical expertise with a deep understanding
+    of social challenges, ensuring solutions that are user-centric,
+    data-driven, and designed for long-term sustainability.
+
           </p>
+
+          
         </div>
 
         {/* RIGHT: CAPABILITIES */}
         <div className="about-capabilities">
-          <h3>What We Do</h3>
+          <h3> Our Mission</h3>
 
           <div className="capability">
-            <span>Web & Platform Development</span>
+            <span>Strengthen NGOs and social enterprises through reliable digital infrastructure</span>
             <div className="bar"><span className="fill w80"></span></div>
           </div>
 
           <div className="capability">
-            <span>Technology for Social Impact</span>
+            <span>Develop technology aligned with the UN Sustainable Development Goals (SDGs)</span>
             <div className="bar"><span className="fill w70"></span></div>
           </div>
 
           <div className="capability">
-            <span>Scalable & Secure System Design</span>
+            <span>Improve access to education, information, and essential services
+</span>
             <div className="bar"><span className="fill w75"></span></div>
           </div>
 
           <div className="capability">
-            <span>Data Management & Insights</span>
+            <span>Enable data‑driven decision‑making for social impact and accountability
+</span>
             <div className="bar"><span className="fill w60"></span></div>
           </div>
         </div>
       </div>
 
+
+   
       {/* VALUES / IMPACT */}
-      <div className="about-values">
-        <div className="value-card">
-          <h3>Impact-Driven Solutions</h3>
-          <p>
-            Digital platforms built to support education, inclusion, and social
-            initiatives.
-          </p>
-        </div>
+      <h1>Values and Impact</h1>
+      <div className="about-values">  
+        
+  <div className="value-card">
+    <h3>Impact-Driven Solutions</h3>
+    <p>
+      Technology built to create measurable social and environmental impact,
+      not just digital outputs.
+    </p>
+  </div>
 
-        <div className="value-card">
-          <h3>Purpose-Led Technology</h3>
-          <p>
-            Systems designed with accessibility, reliability, and long-term
-            scale in mind.
-          </p>
-        </div>
+  <div className="value-card">
+    <h3>Purpose-Led Technology</h3>
+    <p>
+      Every system is designed with accessibility, ethics, and long-term
+      sustainability at its core.
+    </p>
+  </div>
 
-        <div className="value-card">
-          <h3>Communities We Serve</h3>
-          <p>
-            NGOs, educators, and organizations working to create positive social
-            change.
-          </p>
-        </div>
-      </div>
+  <div className="value-card">
+    <h3>Communities We Serve</h3>
+    <p>
+      NGOs, educators, social enterprises, and grassroots organizations
+      driving positive change.
+    </p>
+  </div>
+
+  <div className="value-card">
+    <h3>Aligned with SDGs</h3>
+    <p>
+      Our solutions support the UN Sustainable Development Goals to address
+      inequality, education, and inclusion.
+    </p>
+  </div>
+
+  <div className="value-card">
+    <h3>Data for Social Impact</h3>
+    <p>
+      We enable data-driven insights to improve decision-making,
+      transparency, and accountability.
+    </p>
+  </div>
+
+  <div className="value-card">
+    <h3>Scalable & Reliable Systems</h3>
+    <p>
+      Digital infrastructure that grows with organizations and supports
+      long-term mission success.
+    </p>
+  </div>
+</div>
 
     </section>
   );

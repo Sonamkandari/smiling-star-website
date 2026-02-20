@@ -3,10 +3,10 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
 import Services from './Components/Services/Services'
-import MyWork from './Components/MyWork/myWork'
+import MyWork from './Components/MyWork/MyWork'
 import Contact from './Components/Contact_Section/Contact'
 import Footer from './Components/Footer-Section/Footer'
-
+import AIAssistant from "./Components/AIAssistant/AIAssistant";
 function App() {
   return (
     <div>
@@ -16,6 +16,8 @@ function App() {
       <Hero />
       {/* mount the about component in this App.jsx file*/}
       <About />
+      {/* mount ai assist */}
+      <AIAssistant />
        {/* mount the MyWork component in this App.jsx file */}
       <MyWork />
       {/* mount the Services component in this App.jsx file */}

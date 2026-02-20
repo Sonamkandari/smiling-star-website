@@ -8,6 +8,7 @@ import { mcqData } from "../src/Components/MCQChat/faqData.js"; // backend path
 app.get("/mcq", (req, res) => {
   res.json(mcqData);
 });
+console.log("OPENROUTER_API_KEY:", process.env.OPENROUTER_API_KEY);
 dotenv.config();
 const app = express();
 app.use(cors());
@@ -16,6 +17,7 @@ app.use(express.json());
 app.get("/", (req, res) => res.send("Backend Running"));
 
 app.post("/chat", (req, res) => {
+app.post("/api/chat", async (req, res) => {
   const { message } = req.body;
   const query = message.toLowerCase();
 
