@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
+console.log("OPENROUTER_API_KEY:", process.env.OPENROUTER_API_KEY);
 dotenv.config();
-
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Backend Running");
 });
 
-app.post("/chat", async (req, res) => {
+app.post("/api/chat", async (req, res) => {
   const { message } = req.body;
 
   const websiteContent = `
