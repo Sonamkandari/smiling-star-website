@@ -35,9 +35,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: "https://openrouter.ai/api/v1",
   defaultHeaders: {
-    // 🔴 REQUIRED by OpenRouter
-    "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-    "HTTP-Referer": "http://localhost:3000",
+    // REQUIRED by OpenRouter
+    "HTTP-Referer": process.env.OPENROUTER_REFERER,
     "X-Title": "Smiling Star AI Assistant",
   },
 });
